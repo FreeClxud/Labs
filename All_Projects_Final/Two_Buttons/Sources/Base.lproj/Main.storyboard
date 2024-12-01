@@ -1,0 +1,43 @@
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+        <scenes>
+            <!--View Controller-->
+            <scene sceneID="EHf-IW-A2E">
+                <objects>
+                    <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Two_Buttons" customModuleProvider="target" sceneMemberID="viewController">
+                        <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" placeholder="Enter text here" translatesAutoresizingMaskIntoConstraints="NO" id="textField-1">
+                                    <rect key="frame" x="20" y="100" width="335" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" id="traits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="setTextButton">
+                                    <state key="normal" title="Set Text"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="clearTextButton">
+                                    <state key="normal" title="Clear Text"/>
+                                </button>
+                                <label opaque="NO" contentMode="left" text="Placeholder" textAlignment="center" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="label-1">
+                                    <rect key="frame" x="50" y="300" width="275" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="textField-1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="topConstraint-1"/>
+                                <constraint firstItem="setTextButton" firstAttribute="top" secondItem="textField-1" secondAttribute="bottom" constant="20" id="buttonTopConstraint-1"/>
+                                <constraint firstItem="clearTextButton" firstAttribute="top" secondItem="setTextButton" secondAttribute="bottom" constant="20" id="buttonTopConstraint-2"/>
+                                <constraint firstItem="label-1" firstAttribute="top" secondItem="clearTextButton" secondAttribute="bottom" constant="20" id="labelTopConstraint-1"/>
+                            </constraints>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </viewController>
+                    <placeholder placeholderIdentifier="IBFirstResponder" id="iYq-iO-foz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </objects>
+            </scene>
+        </scenes>
+    </document>
+    
